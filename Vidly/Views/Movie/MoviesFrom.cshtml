@@ -1,0 +1,23 @@
+﻿@model Vidly.Models.Movie
+@{
+    ViewBag.Title = "MoviesFrom";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New Movies</h2>
+
+@using(Html.BeginForm("Create", "Movie)")
+{
+
+<div class="form-group">
+
+    @Html.LabelFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Name)
+
+    </div>
+
+
+}
+
+
+
