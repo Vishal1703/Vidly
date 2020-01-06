@@ -17,7 +17,7 @@ namespace Vidly.Models
             return userIdentity;
         }
     }
-
+    // ApplicationDbContext vishal commit .....
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Customers>  Customers { get; set; }
